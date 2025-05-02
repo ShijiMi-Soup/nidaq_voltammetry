@@ -19,3 +19,16 @@ NIDAQmx を使用して、ボルタンメトリーの波形を出力するプロ
    python main.py
    ```
 1. 必要に応じて、main.py の中身を変えてください
+
+## 出力例
+
+### Cyclic Square Wave (CSW)
+
+- 全体
+  <img src="/example/csw_full.png" alt="CSW全体" />
+- 最初の立ち上がり
+  <img src="/example/csw_1st_rise.png" alt="CSW最初の立ち上がり" />
+- 最初の立ち下がり
+  <img src="/example/csw_1st_fall.png" alt="CSW最初の立ち下がり" />
+- 最初の gap
+  <img src="/example/csw_1st_gap.png" alt="CSW最初のgap" />
