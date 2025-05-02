@@ -24,6 +24,20 @@ NIDAQmx を使用して、ボルタンメトリーの波形を出力するプロ
 
 ### Cyclic Square Wave (CSW)
 
+```python
+# 波形のパラメータ
+sample_rate=100000  # サンプリング周波数
+E_SW = 0.4          # 矩形波の振幅
+E_initial = -0.1    # 初期電圧
+E_holding = 0.2     # 待機電圧（gapの電圧）
+E_peak1 = 1.3       # 第１ピークの電圧 (switching potential?)
+E_peak2 = -1.3      # 第２ピークの電圧
+E_staircase = 12.5e-3 # 矩形波の周期ごとに上昇/下降させる電圧幅 (12.5 to 75 mV)
+tau = 1e-3          # 二相性矩形波の１周期の時間
+gap = 2e-3          # 待機の時間 (0 to 4 ms)
+num_csw = 7         # cycleの数
+```
+
 #### 全体
 
 <img src="/example/csw_full.png" alt="CSW全体" />
